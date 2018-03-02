@@ -1,0 +1,104 @@
+[debug] [2018-03-02T05:27:05.188Z] ----------------------------------------------------------------------
+[debug] [2018-03-02T05:27:05.188Z] Command:       C:\Program Files\nodejs\node.exe C:\Users\Dunno Magic\AppData\Roaming\npm\node_modules\firebase-tools\bin\firebase deploy
+[debug] [2018-03-02T05:27:05.188Z] CLI Version:   3.17.4
+[debug] [2018-03-02T05:27:05.188Z] Platform:      win32
+[debug] [2018-03-02T05:27:05.188Z] Node Version:  v9.7.1
+[debug] [2018-03-02T05:27:05.188Z] Time:          Fri Mar 02 2018 06:27:05 GMT+0100 (Central European Standard Time)
+[debug] [2018-03-02T05:27:05.188Z] ----------------------------------------------------------------------
+[debug] 
+[debug] [2018-03-02T05:27:05.188Z] > command requires scopes: ["email","openid","https://www.googleapis.com/auth/cloudplatformprojects.readonly","https://www.googleapis.com/auth/firebase","https://www.googleapis.com/auth/cloud-platform"]
+[debug] [2018-03-02T05:27:05.188Z] > authorizing via signed-in user
+[debug] [2018-03-02T05:27:05.204Z] > refreshing access token with scopes: ["email","https://www.googleapis.com/auth/cloud-platform","https://www.googleapis.com/auth/cloudplatformprojects.readonly","https://www.googleapis.com/auth/firebase","openid"]
+[debug] [2018-03-02T05:27:05.204Z] >>> HTTP REQUEST POST https://www.googleapis.com/oauth2/v3/token  
+ { refresh_token: '1/ElAb0T-PJUFzyGDyqrmjy1sPpNWepyFeHMkprtWsTDs',
+  client_id: '563584335869-fgrhgmd47bqnekij5i8b5pr03ho849e6.apps.googleusercontent.com',
+  client_secret: 'j9iVZfS8kkCEFUPaAeJV0sAi',
+  grant_type: 'refresh_token',
+  scope: 'email https://www.googleapis.com/auth/cloud-platform https://www.googleapis.com/auth/cloudplatformprojects.readonly https://www.googleapis.com/auth/firebase openid' } 
+ Fri Mar 02 2018 06:27:05 GMT+0100 (Central European Standard Time)
+[debug] [2018-03-02T05:27:05.389Z] <<< HTTP RESPONSE 200
+[debug] [2018-03-02T05:27:05.418Z] >>> HTTP REQUEST GET https://admin.firebase.com/v1/projects/liczbyslownie  
+  
+ Fri Mar 02 2018 06:27:05 GMT+0100 (Central European Standard Time)
+[debug] [2018-03-02T05:27:09.407Z] <<< HTTP RESPONSE 200
+[debug] [2018-03-02T05:27:09.408Z] >>> HTTP REQUEST GET https://admin.firebase.com/v1/database/liczbyslownie/tokens  
+  
+ Fri Mar 02 2018 06:27:09 GMT+0100 (Central European Standard Time)
+[debug] [2018-03-02T05:28:09.796Z] <<< HTTP RESPONSE 200
+[info] 
+[warn] !  Your CLI authentication needs to be updated to take advantage of new features.
+[warn] !  Please run firebase login --reauth
+[info] 
+[debug] [2018-03-02T05:28:09.829Z] > command requires scopes: ["email","openid","https://www.googleapis.com/auth/cloudplatformprojects.readonly","https://www.googleapis.com/auth/firebase"]
+[debug] [2018-03-02T05:28:09.831Z] > authorizing via signed-in user
+[debug] [2018-03-02T05:28:09.831Z] > refreshing access token with scopes: ["email","https://www.googleapis.com/auth/cloudplatformprojects.readonly","https://www.googleapis.com/auth/firebase","openid"]
+[debug] [2018-03-02T05:28:09.832Z] >>> HTTP REQUEST POST https://www.googleapis.com/oauth2/v3/token  
+ { refresh_token: '1/ElAb0T-PJUFzyGDyqrmjy1sPpNWepyFeHMkprtWsTDs',
+  client_id: '563584335869-fgrhgmd47bqnekij5i8b5pr03ho849e6.apps.googleusercontent.com',
+  client_secret: 'j9iVZfS8kkCEFUPaAeJV0sAi',
+  grant_type: 'refresh_token',
+  scope: 'email https://www.googleapis.com/auth/cloudplatformprojects.readonly https://www.googleapis.com/auth/firebase openid' } 
+ Fri Mar 02 2018 06:28:09 GMT+0100 (Central European Standard Time)
+[debug] [2018-03-02T05:28:12.393Z] <<< HTTP RESPONSE 200
+[debug] [2018-03-02T05:28:12.534Z] >>> HTTP REQUEST GET https://admin.firebase.com/v1/projects/liczbyslownie  
+  
+ Fri Mar 02 2018 06:28:12 GMT+0100 (Central European Standard Time)
+[debug] [2018-03-02T05:28:13.003Z] <<< HTTP RESPONSE 200
+[error] 
+[error] Error: Server Error: Unexpected Response. Please try again
+[debug] [2018-03-02T05:28:13.246Z] Error Context: {
+  "status": 200,
+  "response": {
+    "statusCode": 200,
+    "body": {
+      "error": {
+        "code": "SERVICE_UNAVAILABLE",
+        "message": "This service is currently unavailable. Please try again in a few moments."
+      }
+    },
+    "headers": {
+      "server": "nginx",
+      "date": "Fri, 02 Mar 2018 05:28:12 GMT",
+      "content-type": "application/json",
+      "content-length": "147",
+      "last-modified": "Wed, 09 Sep 2015 22:17:34 GMT",
+      "connection": "close",
+      "etag": "\"55f0affe-93\"",
+      "access-control-allow-origin": "*",
+      "access-control-allow-methods": "GET, PUT, POST, DELETE, OPTIONS",
+      "access-control-allow-headers": "*",
+      "strict-transport-security": "max-age=31536000; includeSubdomains",
+      "cache-control": "no-cache, no-store",
+      "accept-ranges": "bytes"
+    },
+    "request": {
+      "uri": {
+        "protocol": "https:",
+        "slashes": true,
+        "auth": null,
+        "host": "admin.firebase.com",
+        "port": 443,
+        "hostname": "admin.firebase.com",
+        "hash": null,
+        "search": null,
+        "query": null,
+        "pathname": "/v1/projects/liczbyslownie",
+        "path": "/v1/projects/liczbyslownie",
+        "href": "https://admin.firebase.com/v1/projects/liczbyslownie"
+      },
+      "method": "GET",
+      "headers": {
+        "User-Agent": "FirebaseCLI/3.17.4",
+        "X-Client-Version": "FirebaseCLI/3.17.4",
+        "authorization": "Bearer ya29.GmNyBY10PdUrM_0jcMMtewSt92BtAY3Q6Crx-jQ9GqbOxf4io01B2zP2MPdLt6MZNB_ZtJ2rr1uAs6lcTYJUAXKvMI-fof4vERULWs2li7xGr2nCUtdrElYEXLXvO5dhKt7sVHI",
+        "accept": "application/json"
+      }
+    }
+  },
+  "body": {
+    "error": {
+      "code": "SERVICE_UNAVAILABLE",
+      "message": "This service is currently unavailable. Please try again in a few moments."
+    }
+  }
+}

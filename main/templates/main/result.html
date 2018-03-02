@@ -1,0 +1,8 @@
+{% load static %}
+<link rel="stylesheet" type="text/css" href="{% static 'main/style.css' %}" />
+
+<div class="card">
+    {{ number_str }}
+    <br />
+    <button onclick="location.href='{% url 'main:index' %}'">Wróć</button>
+</div>
